@@ -1,0 +1,21 @@
+POST http://localhost:9001/books HTTP/1.1
+content-type: application/json
+
+{
+    "isbn": "1234567893",
+    "title": "Story of Dhadippa",
+    "author": "Dhadippa",
+    "price": 19.90
+}
+
+###
+
+GET http://localhost:9001/books HTTP/1.1
+
+###
+
+GET http://localhost:9001/books/1234567893 HTTP/1.1
+
+###
+
+DELETE http://localhost:9001/books/1234567893
